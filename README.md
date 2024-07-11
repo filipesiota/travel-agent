@@ -60,3 +60,6 @@ $ aws ecr get-login-password --region us-east-1 | docker login --username AWS --
 $ docker tag travelagent:latest 653041657227.dkr.ecr.us-east-1.amazonaws.com/travelagent:latest
 $ docker push 653041657227.dkr.ecr.us-east-1.amazonaws.com/travelagent:latest
 ```
+### Diagrama estrutural do projeto
+
+![Diagrama estrutural do projeto](https://github.com/filipesiota/travel-agent/assets/69269724/14c08e1c-76e5-4a49-bd28-c26cfface370)
