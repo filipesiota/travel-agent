@@ -1,5 +1,7 @@
 # NWL Journey - Agente de Viagens com IA
 
+- **Notion:** [NWL 16 - Journey](https://efficient-sloth-d85.notion.site/NLW-16-Journey-013b69ad79894122824abd76bc0dab9b)
+
 ## Aula 1 - LLMs e os agentes de IA
 
 ### Conceitos
@@ -40,3 +42,21 @@
 
 - **bs4:** Interpretador de HTML.
 - **RecursiveCharacterTextSplitter:** Dividir o texto do documento em partes menores (chunks).
+
+## Aula 3 - Deploy do nosso agente de viagens na AWS
+
+### Conceitos
+
+- **Elastic Container Registry (ECR):** Serviço de registro de imagens Docker da AWS.
+- **Lambda Function:** Code as a service ou function serverless.
+- **Application Load Balancer (ALB):** Pode ser utilizado como API para expor a função lambda a fim de ser utilizada por aplicações que não estão hospedadas na AWS. No caso de aplicações hospedadas na AWS, a plataforma fornece uma maneira direta de executar a função lambda.
+
+### Comandos
+
+```
+$ docker build --platform linux/x86_64 -t travelagent .
+$ aws configure
+$ aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 653041657227.dkr.ecr.us-east-1.amazonaws.com
+$ docker tag travelagent:latest 653041657227.dkr.ecr.us-east-1.amazonaws.com/travelagent:latest
+$ docker push 653041657227.dkr.ecr.us-east-1.amazonaws.com/travelagent:latest
+```
