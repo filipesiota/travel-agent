@@ -1,0 +1,11 @@
+BeautifulSoup4
+python-dotenv
+langchain-openai
+langchain-community
+langchain
+langchainhub
+langchain-text-splitters
+langchain-core
+duckduckgo-search
+wikipedia
+chromadb
