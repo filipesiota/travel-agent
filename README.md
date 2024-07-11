@@ -48,7 +48,7 @@
 ### Conceitos
 
 - **Elastic Container Registry (ECR):** Serviço de registro de imagens Docker da AWS.
-- **Lambda Function:** Code as a service ou function serverless.
+- **AWS Lambda:** Code as a service ou function serverless.
 - **Application Load Balancer (ALB):** Pode ser utilizado como API para expor a função lambda a fim de ser utilizada por aplicações que não estão hospedadas na AWS. No caso de aplicações hospedadas na AWS, a plataforma fornece uma maneira direta de executar a função lambda.
 
 ### Comandos
